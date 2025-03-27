@@ -277,34 +277,56 @@
                     <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
                     <p class="font-medium text-md text-secondary md:text-lg">
-                        Silakan isi formulir di bawah ini untuk memberikan Saran & Kesan, Terima Kasih😊
-                      
+                        Silakan isi formulir di bawah ini untuk memberikan Saran & Kesan, Terima Kasih 😊
                     </p>
                 </div>
             </div>
-            <form id="whatsapp-form">
-                <div class="w-full lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-8">
-                        <label for="name" class="text-base font-bold text-primary">Nama</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
+    
+            <!-- Wrapper untuk Layout Responsive -->
+            <div class="flex flex-col-reverse lg:flex-row lg:items-start lg:justify-between">
+    
+                <!-- Form Kontak -->
+                <form id="whatsapp-form" class="w-full lg:w-1/2 px-4">
+                    <div class="w-full">
+                        <div class="mb-8">
+                            <label for="name" class="text-base font-bold text-primary">Nama</label>
+                            <input type="text" id="name" class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary" required>
+                        </div>
+                        <div class="mb-8">
+                            <label for="email" class="text-base font-bold text-primary">Email</label>
+                            <input type="email" id="email" class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary" required>
+                        </div>
+                        <div class="mb-8">
+                            <label for="message" class="text-base font-bold text-primary">Pesan</label>
+                            <textarea id="message" class="w-full bg-slate-200 text-dark p-4 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary h-40" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="text-base font-semibold text-white bg-primary py-5 px-4 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                                Kirim 
+                            </button>
+                        </div>
                     </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="email" class="text-base font-bold text-primary">Email</label>
-                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="message" class="text-base font-bold text-primary">Pesan</label>
-                        <textarea id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" required></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
-                            Kirim 
-                        </button>
+                </form>
+    
+                <!-- Maps (Di atas saat mobile, di kiri saat desktop) -->
+                <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+                    <h3 class="text-lg font-semibold text-dark mb-4 text-center lg:text-left">Lokasi Kami</h3>
+                    <div class="w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+    class="w-full h-[600px] rounded-lg shadow-lg"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4500198230516!2d109.14053774648305!3d-6.969093672145285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTgnMTAuOSJTIDEwOcKwMDgnMjEuOSJF!5e0!3m2!1sid!2sid!4v1711543214567"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+                
+                    
                     </div>
                 </div>
-            </form>
+    
+            </div>
         </div>
     </section>
+    
+    
      <!-- contact section end -->
 
       <!-- footer start -->
