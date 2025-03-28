@@ -176,6 +176,9 @@ body {
   overflow-x: hidden; /* Mencegah scroll horizontal */
   width: 100%;
 }
+.tailwind {
+  @apply overflow-x-hidden;
+}
 
 /*
 1. Add the correct height in Firefox.
