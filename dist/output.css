@@ -173,6 +173,8 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  width: 100%;
 }
 
 /*
