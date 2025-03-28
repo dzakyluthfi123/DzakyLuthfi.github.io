@@ -1388,4 +1388,35 @@ body {
   
 
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .flex1 {
+      flex-direction: column;
+  }
+
+  .maps-container,
+  .form-contact {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact h2 {
+      font-size: 1.8rem;
+  }
+
+  .maps-container iframe {
+      height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact h2 {
+      font-size: 1.5rem;
+  }
+
+  .maps-container iframe {
+      height: 200px;
+  }
+}
 
