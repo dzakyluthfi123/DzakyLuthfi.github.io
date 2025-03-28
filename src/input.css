@@ -6,25 +6,32 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm shadow;
-}
-
 .hamburger-line {
-    @apply w-[30px] h-[2px] my-2 block bg-dark;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px auto;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-.hamburger-active > span:nth-child(1) {
-    @apply rotate-45 transition;
+.hamburger-active .hamburger-line:first-child {
+    transform: rotate(45deg) translateY(10px);
 }
 
-.hamburger-active > span:nth-child(2) {
-    @apply scale-0;
+.hamburger-active .hamburger-line:nth-child(2) {
+    opacity: 0;
 }
 
-.hamburger-active > span:nth-child(3) {
-    @apply -rotate-45;
+.hamburger-active .hamburger-line:last-child {
+    transform: rotate(-45deg) translateY(-10px);
 }
+
+/* Menu saat terbuka */
+.nav-active {
+    display: block !important;
+}
+
 
 .marquee {
     width: 100%;
