@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
-<body>
+<body class="overflow-x-hidden">
     <!-- header start -->
      <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
@@ -457,11 +457,15 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
 
       <script src="dist/js/script.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>AOS.init({
-        duration: 700, // Waktu animasi
-        delay: 300, // Delay sebelum muncul
-        once: false, // Muncul sekali saja
-    });</script>
+      <script>
+        AOS.init({
+            duration: 600, // Durasi animasi dalam ms
+            delay: 300, // Delay sebelum animasi berjalan
+            once: false, // Animasi bisa berjalan lebih dari sekali
+            mirror: true // Animasi berjalan saat scroll ke atas dan ke bawah
+        });
+    </script>
+    
 
 </body>
 </html>
