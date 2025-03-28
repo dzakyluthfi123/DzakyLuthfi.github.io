@@ -69,3 +69,31 @@ document.getElementById("whatsapp-form").addEventListener("submit", function(eve
     // Arahkan pengguna ke WhatsApp
     window.open(whatsappLink, "_blank");
 });
+
+const numSegments = 20;
+const segments = [];
+
+// Membuat elemen snake dan menambahkannya ke body
+for (let i = 0; i < numSegments; i++) {
+    const segment = document.createElement('div');
+    segment.classList.add('snake');
+    document.body.appendChild(segment);
+    segments.push(segment);
+}
+
+let positions = Array(numSegments).fill({ x: 0, y: 0 });
+
+document.addEventListener('mousemove', (e) => {
+    positions.unshift({ x: e.clientX, y: e.clientY });
+    positions.pop();
+
+    segments.forEach((segment, i) => {
+        segment.style.transform = `translate(${positions[i].x}px, ${positions[i].y}px)`;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('show');
+    });
+});
