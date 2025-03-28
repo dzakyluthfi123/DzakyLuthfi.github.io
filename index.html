@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
@@ -57,7 +57,7 @@
      <section id="home" class="pt-20">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-6 lg:w-1/2">
+                <div class="w-full self-center px-6 lg:w-1/2" data-aos="fade-right">
                     <h1 class="text-base font-semibold text-primary md:text-xl">
     Halo Semua 👋, Saya 
     <span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl">Muh Dzaky Luthfi</span>
@@ -90,11 +90,11 @@
      </section>
     <!-- home section end -->
      <!-- tentang saya section start -->
-     <section id="about" class="pt-36 pb-32">
+     <section id="about" class="pt-36 pb-32 fade-in">
         <div class="container">
             <div class="flex flex-wrap">
                 <!-- Bagian Kiri (Text) -->
-                <div class="w-full px-4 mb-10 lg:w-1/2">
+                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-right">
                     <h4 class="font-bold uppercase text-primary text-lg mb-4">Tentang Saya</h4>
                     <h2 class="font-bold text-dark mb-5 text-3xl max-w-xl lg:text-4xl">
                         Yuk, Belajar Tentang Pemrograman Bersama Saya
@@ -105,7 +105,7 @@
                 </div>
     
                 <!-- Bagian Kanan (Sosial Media) -->
-                <div class="w-full px-4 lg:w-1/2">
+                <div class="w-full px-4 lg:w-1/2" data-aos="fade-left">
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam neque obcaecati excepturi!
@@ -139,7 +139,7 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
      <!-- tentang saya section end -->
      
      <!-- portofolio start -->
-     <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+     <section id="portofolio" class="pt-36 pb-16 bg-slate-100 fade-in">
         <div class="container">
             <div class="w-full text-center mb-16">
                 <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
@@ -202,7 +202,7 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
      <!-- portofolio end -->
 
      <!-- clients start -->
-     <section id="clients" class="pt-36 pb-32 bg-slate-800">
+     <section id="clients" class="pt-36 pb-32 bg-slate-800 fade-in">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
@@ -234,18 +234,18 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
      <!-- clients end -->
 
      <!-- Blog start -->
-     <section id="blog" class="pt-36 pb-32 bg-slate-100">
+     <section id="blog" class="pt-36 pb-32 bg-slate-100 fade-in">
         <div class="container">
-            <div class="w-full text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-                <p class="font-medium text-md text-secondary md:text-lg">
-                    Dapatkan informasi terbaru dari berbagai topik menarik.
-                </p>
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, perspiciatis.</p>
+                </div>
             </div>
 
             <!-- Grid Blog -->
-            <div class="flex flex-wrap justify-center">
+            <div class="flex flex-wrap">
                 
                 <!-- 1 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
@@ -253,56 +253,58 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
                         <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
                         <div class="py-8 px-6">
                             <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
-                            <p class="font-medium text-base text-secondary mb-4">Cara mudah belajar coding dari nol hingga mahir.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 2 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/blog2.jpg" alt="blog2" class="w-full">
+                        <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
                         <div class="py-8 px-6">
-                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Mengenal Framework Populer</a></h3>
-                            <p class="font-medium text-base text-secondary mb-4">Perbandingan antara Laravel, CodeIgniter, dan Express.js.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 3 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/blog3.jpg" alt="blog3" class="w-full">
+                        <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
                         <div class="py-8 px-6">
-                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Strategi Sukses Freelance</a></h3>
-                            <p class="font-medium text-base text-secondary mb-4">Panduan lengkap menjadi freelancer sukses di bidang IT.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 4 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/blog4.jpg" alt="blog4" class="w-full">
+                        <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
                         <div class="py-8 px-6">
-                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Belajar UI/UX dari Nol</a></h3>
-                            <p class="font-medium text-base text-secondary mb-4">Konsep dasar UI/UX untuk pemula agar bisa mendesain dengan baik.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- 5 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/blog5.jpg" alt="blog5" class="w-full">
+                        <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
                         <div class="py-8 px-6">
-                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Cara Membuat Website Responsive</a></h3>
-                            <p class="font-medium text-base text-secondary mb-4">Tips agar website tetap responsif di berbagai perangkat.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="dist/img/blog1.jpg" alt="blog1" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Pemrograman</a></h3>
+                            <p class="font-medium text-base text-secondary mb-6">Cara mudah belajar coding dari nol hingga mahir.</p>
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -314,7 +316,7 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
      <!-- Blog end -->
 
      <!-- contact section start -->
-     <section id="contact" class="pt-36 pb-32">
+     <section id="contact" class="pt-36 pb-32 fade-in">
         <div class="container">
             <div class="mx-auto text-center mb-16 w-full">
                 <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
@@ -455,12 +457,11 @@ items-center border border-slate-300 text-slate-300 hover:border-primary hover:b
 
       <script src="dist/js/script.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000,  // Durasi animasi (ms)
-        once: false       // Animasi hanya terjadi sekali
-    });
-</script>
+      <script>AOS.init({
+        duration: 700, // Waktu animasi
+        delay: 300, // Delay sebelum muncul
+        once: false, // Muncul sekali saja
+    });</script>
 
 </body>
 </html>
